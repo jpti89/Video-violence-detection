@@ -1,0 +1,16 @@
+tensorflow
+keras
+os
+imgaug
+imageio
+cv2
+math
+tqdm
+numpy
+sklearn
+pickle
+matplotlib
+seaborn
+PIL
+Flask
+subprocess
