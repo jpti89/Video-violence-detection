@@ -14,6 +14,9 @@ The architecture of the Train_violence_model.ipynb project is:
 - Save weights and model
 - Evaluate
 
+The labels of each frame are mantained for the whole video. That means, if there's violence only in some frames of the video, the network learns from the whole video anyway. This could generate a problem with some incorrect predictions using videos from outside the traning dataset.
+
+
 Then the architecture of the Flask Violence detection.ipynb project is:
 - (One time) Generate thumbnails of the videos
 - Load the already trained model
