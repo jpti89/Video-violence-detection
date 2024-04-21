@@ -15,6 +15,7 @@ The architecture of the Train_violence_model.ipynb project is:
 - Evaluate
 
 The labels of each frame are mantained for the whole video. That means, if there's violence only in some frames of the video, the network learns from the whole video anyway. This could generate a problem with some incorrect predictions using videos from outside the traning dataset.
+
 MobileNetV2 was choosen because it's lightweight, fast and easy to train model, accurate for our CNN clasification use case.
 
 Then the architecture of the Flask Violence detection.ipynb project is:
