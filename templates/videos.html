@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Videos</title>
+</head>
+<body>
+    <form action="/select_video" method="post">
+        <table>
+            <tr>
+                <th>Video Name</th>
+                <th>Thumbnail</th>
+            </tr>
+            {% for video in videos %}
+            <tr>
+                <td>{{ video }}</td>
+                <td><img src="{{ images }}" alt="Image"></td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>Inference</td>
+                <td>{{ detection }}</td>
+            </tr>			
+        </table>
+        <input type="submit" value="Inference">
+    </form>
+</body>
+</html>
