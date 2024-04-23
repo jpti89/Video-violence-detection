@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stream Camera</title>
+</head>
+<body>
+<h1>Video Streaming</h1>
+<form action = "{{ url_for('tasks') }}" method = "POST">
+		<table>
+            <tr>
+                <th>Inference</th>
+                <th>Live Feed</th>
+            </tr>
+            <tr>
+                <td>{{ detection }}</td>
+                <td>
+            <img src="{{ url_for('video_feed') }}" width="100%"></td>
+            </tr>
+        </table>
+			<input type="submit" value="Capture" name="click"/>
+			<input type="submit" value="Start/Stop Recording" name="rec" />
+
+	  <br>
+<a href="{{ url_for('Youtube_form') }}"> Detect violence from a YouTube video</a>
+	  <br>
+<a href="{{ url_for('tasks_rtsp') }}"> Detect violence from RTSP Streaming</a>
+	  <br>
+<a href="{{ url_for('list_videos') }}"> Return to home</a>
+</body>
+</html>
