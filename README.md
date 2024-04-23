@@ -34,9 +34,8 @@ Then the architecture of the Flask Violence detection.ipynb project is:
 - (One time) Generate thumbnails of the videos
 - Load the already trained model
 - Generate a Web APP that:
-1. Shows a thumbnail of a random video from the Train/Val Dataset (also using an outside Dataset*), and responds with the inference of the model of how likely is that the image has violence, (Value between 0 and 1, being 1 more likely of violence)
+1. Shows a thumbnail of a random video from the Train/Val Dataset, and responds with the inference of the model of how likely is that the image has violence, (Value between 0 and 1, being 1 more likely of violence)
 2. Evaluate the model on YouTube videos
 3. Evaluate the model using the WebCamera of the users PC
 4. Evaluate the model using an RTSP feed
 
-* Outside Dataset: https://github.com/mchengny/RWF2000-Video-Database-for-Violence-Detection
