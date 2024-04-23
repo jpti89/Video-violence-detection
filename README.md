@@ -24,6 +24,15 @@ The labels of each frame are mantained for the whole video. That means, if there
 ### Use of MobileNetV2
 MobileNetV2 was choosen because it's lightweight, fast and easy to train model, accurate for our CNN clasification use case. It's so light that it can be implemented on edge computing devices for continuing training and live inferencing.
 
+### Architectural Features of MobileNetV2
+1. Inverted Residuals:
+In traditional residual networks (ResNets), the main idea is to learn residual functions with reference to the layer inputs, which are then added to the layer outputs. This helps in easier training of very deep networks.
+In MobileNetV2, the concept of residuals is inverted. Instead of the input being added to the output, the output is added to the input. This is particularly useful in mobile architectures where reducing the number of computations is crucial.
+
+2. Linear Bottlenecks:
+Traditional bottleneck architectures, as seen in models like ResNet, typically involve reducing the dimensionality of the feature maps (using 1x1 convolutions) before applying more computationally expensive operations (like 3x3 convolutions).
+In MobileNetV2, linear bottlenecks are introduced to maintain low-dimensional feature representations throughout the network. This is achieved by avoiding non-linearities (like ReLU activation) after the 1x1 convolutions in the bottleneck layers.
+
 ![The-proposed-MobileNetV2-network-architecture](https://github.com/jpti89/Video-violence-detection/assets/18633422/825b9b1f-76e1-494c-8948-d9b254031444)
 * Instead of Softmax, we use a Sigmoid function
 
