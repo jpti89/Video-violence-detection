@@ -6,6 +6,8 @@
 
 Using the dataset from Kaggle https://www.kaggle.com/datasets/mohamedmustafa/real-life-violence-situations-dataset we managed to fine-tune and train a CNN model.
 
+### Architecture of our training project
+
 The architecture of the Train_violence_model.ipynb project is:
 - Download the Dataset from Google Drive
 - Extract image frames of every video standarizing every image at 128x128 px
