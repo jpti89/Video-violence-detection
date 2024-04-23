@@ -25,6 +25,9 @@ The labels of each frame are mantained for the whole video. That means, if there
 MobileNetV2 was choosen because it's lightweight, fast and easy to train model, accurate for our CNN clasification use case. It's so light that it can be implemented on edge computing devices for continuing training and live inferencing.
 
 ### Architectural Features of MobileNetV2
+MobileNetV2 is a convolutional neural network architecture that seeks to perform well on mobile devices. It is based on an inverted residual structure where the residual connections are between the bottleneck layers. The intermediate expansion layer uses lightweight depthwise convolutions to filter features as a source of non-linearity. 
+As a whole, the architecture of MobileNetV2 contains the initial fully convolution layer with 32 filters, followed by 19 residual bottleneck layers.
+
 1. Inverted Residuals:
 In traditional residual networks (ResNets), the main idea is to learn residual functions with reference to the layer inputs, which are then added to the layer outputs. This helps in easier training of very deep networks.
 In MobileNetV2, the concept of residuals is inverted. Instead of the input being added to the output, the output is added to the input. This is particularly useful in mobile architectures where reducing the number of computations is crucial.
@@ -36,8 +39,9 @@ In MobileNetV2, linear bottlenecks are introduced to maintain low-dimensional fe
 ![The-proposed-MobileNetV2-network-architecture](https://github.com/jpti89/Video-violence-detection/assets/18633422/825b9b1f-76e1-494c-8948-d9b254031444)
 * Instead of Softmax, we use a Sigmoid function
 
-MobileNetV2 is a convolutional neural network architecture that seeks to perform well on mobile devices. It is based on an inverted residual structure where the residual connections are between the bottleneck layers. The intermediate expansion layer uses lightweight depthwise convolutions to filter features as a source of non-linearity. As a whole, the architecture of MobileNetV2 contains the initial fully convolution layer with 32 filters, followed by 19 residual bottleneck layers.
 
+
+## Novelty: WebAPP to evaluate the model and retrain on new data
 
 Then the architecture of the Flask Violence detection.ipynb project is:
 - (One time) Generate thumbnails of the videos
