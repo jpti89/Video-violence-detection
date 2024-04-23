@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+   <body>
+<table>
+            <tr>
+                <th>Video Name</th>
+                <th>Thumbnail</th>
+            </tr>
+            <tr>
+                <td>{{ videos }}</td>
+                <td><img
+  src="{{ url_for('static', filename='inference.jpeg') }}"
+  class="image"
+/></td>
+            </tr>
+            <tr>
+                <td>Inference</td>
+                <td>{{ detection }}</td>
+            </tr>					
+        </table>
+	  <br>
+<a href="{{ url_for('Youtube_form') }}"> Another video</a>
+	  <br>
+<a href="{{ url_for('list_videos') }}"> Return to home</a>
+   </body>
+</html>
