@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
    <body>
+<form action = "http://localhost:9000/Youtube_train" method = "POST">
 <table>
             <tr>
                 <th>Video Name</th>
@@ -17,8 +18,13 @@
                 <td>Inference</td>
                 <td>{{ detection }}</td>
             </tr>					
-        </table>
-	  <br>
+        </table><br>
+		Send for retrain?
+		<br>
+			<input type="hidden" value= "{{ videos }}" name="video_name"/>
+			<input type="submit" value="Violence" name="violence"/>
+			<input type="submit" value="Non Violence" name="non_violence" />
+	  <br><br>
 <a href="{{ url_for('Youtube_form') }}"> Another video</a>
 <br>
 <a href="{{ url_for('tasks') }}"> Detect violence from WebCam Streaming</a>
