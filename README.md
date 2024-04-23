@@ -18,6 +18,8 @@ The labels of each frame are mantained for the whole video. That means, if there
 
 MobileNetV2 was choosen because it's lightweight, fast and easy to train model, accurate for our CNN clasification use case.
 
+![Reults1](https://github.com/jpti89/Video-violence-detection/blob/main/Train_results/results.png)
+
 Then the architecture of the Flask Violence detection.ipynb project is:
 - (One time) Generate thumbnails of the videos
 - Load the already trained model
