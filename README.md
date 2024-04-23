@@ -2,6 +2,8 @@
 
 ## Training Violence detection model using Tensorflow Keras + MobileNetV2 model
 
+![image](https://github.com/jpti89/Video-violence-detection/assets/18633422/cc2e4912-4613-4fe9-a83d-7e527ebc59b4)
+
 Using the dataset from Kaggle https://www.kaggle.com/datasets/mohamedmustafa/real-life-violence-situations-dataset we managed to fine-tune and train a CNN model.
 
 The architecture of the Train_violence_model.ipynb project is:
