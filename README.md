@@ -52,3 +52,7 @@ Then the architecture of the Flask Violence detection.ipynb project is:
 3. Evaluate the model using the WebCamera of the users PC
 4. Evaluate the model using an RTSP feed
 
+
+![image](https://github.com/jpti89/Video-violence-detection/assets/18633422/9f017a54-ceb9-4676-9ad9-40a10cb007b6)
+
+
